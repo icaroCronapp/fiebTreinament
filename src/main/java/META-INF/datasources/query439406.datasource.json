@@ -1,0 +1,211 @@
+{
+  "customId": "query439406",
+  "queryName": "Periodo Personalizado",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Periodo",
+  "entityFullName": "app.entity.Periodo",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Periodo",
+        "alias": "p",
+        "namespace": "app.entity.Periodo",
+        "dataSourceOptions": {
+          "id": "app.Periodo",
+          "customId": "Periodo",
+          "customQueryName": "app.Periodo",
+          "paramValues": [],
+          "entityFullName": "app.entity.Periodo",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "periodo",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "ativo",
+              "type": "Boolean",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Periodo",
+          "fullName": "app.entity.Periodo",
+          "labelName": "app.entity.Periodo (Periodo)"
+        },
+        "name": "Periodo"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "blocklyClass": "blockly.ValidacaoPeriodo",
+      "blocklyMethod": "antesDeInserirPeriodo",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003capp.entity.Periodo\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "library": false,
+        "namespace": "blockly.ValidacaoPeriodo",
+        "sourcePath": "src/main/java/blockly/ValidacaoPeriodo.blockly",
+        "language": "java",
+        "class": "blockly.ValidacaoPeriodo",
+        "methods": [
+          {
+            "name": "antesDeInserirPeriodo",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u003capp.entity.Periodo\u003e"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": {
+      "type": "server",
+      "blocklyMethod": "depoisDeInserir",
+      "blocklyClass": "blockly.ValidacaoPeriodo",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "id": "f7f3b7c8",
+          "name": "Entidade\u0026lt;app.entity.Periodo\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.ValidacaoPeriodo",
+        "sourcePath": "src/main/java/blockly/ValidacaoPeriodo.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "antesDeInserirPeriodo",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Periodo\u0026gt;"
+            ]
+          },
+          {
+            "name": "depoisDeInserir",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Periodo\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "periodo": null,
+    "ativo": null,
+    "dataInicial": null,
+    "dataFinal": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "periodo": null,
+    "ativo": null,
+    "dataInicial": null,
+    "dataFinal": null
+  },
+  "security": {
+    "id": null,
+    "periodo": null,
+    "ativo": null,
+    "dataInicial": null,
+    "dataFinal": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query439406/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}

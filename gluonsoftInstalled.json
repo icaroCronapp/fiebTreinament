@@ -1,0 +1,51 @@
+[
+  {
+    "gluonsoftId": "4A76E640-582B-45E8-BA12-97FE0189F085",
+    "versionId": "B4C64C3E-CA1D-447A-B8E0-AA1E40EAEA2B",
+    "name": "Google Maps",
+    "version": "0.0.14",
+    "dateAdded": "2024-04-26 17:44:34",
+    "filesMerged": [
+      {
+        "name": "webapp",
+        "path": "/src/main/webapp",
+        "npmDependencies": [
+          {
+            "name": "cronapp-google-maps",
+            "version": "0.0.14"
+          }
+        ]
+      },
+      {
+        "name": "index.html",
+        "path": "/src/main/webapp/index.html",
+        "htmlDependencies": [
+          {
+            "src": "node_modules/cronapp-google-maps/cronapp-google-maps.cronapi.js",
+            "type": "script"
+          }
+        ]
+      },
+      {
+        "name": "www",
+        "path": "/src/main/mobileapp/www",
+        "npmDependencies": [
+          {
+            "name": "cronapp-google-maps",
+            "version": "0.0.14"
+          }
+        ]
+      },
+      {
+        "name": "index.html",
+        "path": "/src/main/mobileapp/www/index.html",
+        "htmlDependencies": [
+          {
+            "src": "node_modules/cronapp-google-maps/cronapp-google-maps.cronapi.js",
+            "type": "script"
+          }
+        ]
+      }
+    ]
+  }
+]
